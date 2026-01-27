@@ -45,7 +45,7 @@ export default function Header() {
   <input
     type="text"
     placeholder="Search for products..."
-    className="flex-1 px-4 text-sm outline-none sm:px-5 sm:py-4"
+    className="flex-1 px-4 text-black text-sm outline-none sm:px-5 sm:py-4"
   />
   <button className="px-5 bg-green-700 text-white sm:px-6 sm:py-4">
     <Search size={18} />
