@@ -27,7 +27,7 @@ export default function Header() {
           {/* ================= MENU (CENTER - DESKTOP) ================= */}
           <nav className="hidden md:flex items-center gap-8 text-sm font-semibold text-green-800">
             <Link href="/" className="hover:text-green-600">Home</Link>
-            <Link href="/shop" className="hover:text-green-600">Shop</Link>
+            <Link href="/about" className="hover:text-green-600">About Us</Link>
             <Link href="/product" className="hover:text-green-600">Products</Link>
             <Link href="/gallery" className="hover:text-green-600">Gallery</Link>
             <Link href="/contact" className="hover:text-green-600">Contact</Link>
@@ -67,7 +67,7 @@ export default function Header() {
         <div className="md:hidden bg-white border-t shadow-lg">
           <nav className="flex flex-col p-4 gap-4 text-sm font-medium text-gray-700">
             <Link href="/" onClick={() => setOpen(false)}>Home</Link>
-            <Link href="/shop" onClick={() => setOpen(false)}>Shop</Link>
+            <Link href="/about" onClick={() => setOpen(false)}>About Us</Link>
             <Link href="/product" onClick={() => setOpen(false)}>Products</Link>
             <Link href="/gallery" onClick={() => setOpen(false)}>Gallery</Link>
             <Link href="/contact" onClick={() => setOpen(false)}>Contact</Link>

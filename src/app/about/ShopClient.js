@@ -103,57 +103,101 @@ export default function ShopClient() {
       </section>
 
       {/* ===== OUR STORY ===== */}
-      <section className="bg-gray-50 py-20 px-6">
-        <div className="max-w-6xl mx-auto md:text-center">
+     {/* ===== OUR STORY ===== */}
+<section className="bg-gray-50 py-20 px-6">
+  <div className="max-w-6xl mx-auto">
 
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-800">
-            Our Story
-          </h2>
+    <h2 className="text-3xl md:text-4xl font-bold text-gray-800 text-center">
+      Our Story
+    </h2>
 
-          <p className="mt-6 text-gray-600 max-w-4xl mx-auto leading-relaxed">
-            Farsan Gold started with a simple belief – snacks should not just
-            taste good, they should feel wholesome. Inspired by traditional
-            Indian kitchens, our journey began with small batches of freshly
-            prepared farsan made for families who value quality and authenticity.
+    {/* Timeline Items */}
+    <div className="mt-12 space-y-12">
+      {/* 2009 Start */}
+      <div className="md:flex md:items-center md:space-x-8">
+        <div className="md:w-1/2 md:order-1">
+          <p className="text-gray-600 leading-relaxed">
+            <strong>2009:</strong> Aash Enterprises was founded with a simple vision: to provide high-quality, authentic Indian farsan snacks that delight families across the country. From our humble beginnings in small-scale kitchens, we focused on taste, hygiene, and customer satisfaction.
           </p>
-
-          <p className="mt-4 text-gray-600 max-w-4xl mx-auto leading-relaxed">
-            Today, we continue the same tradition with modern processes,
-            ensuring every product reaches you fresh, flavorful and full of
-            love.
-          </p>
-
-          <div className="mt-12 grid grid-cols-1 sm:grid-cols-3 gap-6">
-            <div className="bg-white rounded-2xl p-6 shadow-sm">
-              <h4 className="font-semibold text-green-800">
-                Rooted in Tradition
-              </h4>
-              <p className="text-sm text-gray-600 mt-2">
-                Authentic recipes inspired by Indian households.
-              </p>
-            </div>
-
-            <div className="bg-white rounded-2xl p-6 shadow-sm">
-              <h4 className="font-semibold text-green-800">
-                Crafted with Care
-              </h4>
-              <p className="text-sm text-gray-600 mt-2">
-                Every batch prepared with attention to quality & hygiene.
-              </p>
-            </div>
-
-            <div className="bg-white rounded-2xl p-6 shadow-sm">
-              <h4 className="font-semibold text-green-800">
-                Made for Families
-              </h4>
-              <p className="text-sm text-gray-600 mt-2">
-                Snacks perfect for every age and every occasion.
-              </p>
-            </div>
-          </div>
-
         </div>
-      </section>
+        <div className="md:w-1/2 md:order-2 flex justify-center md:justify-end">
+          <div className="bg-green-100 rounded-xl p-6 shadow-sm w-full md:w-80">
+            <h4 className="font-semibold text-green-800">Founded</h4>
+            <p className="text-sm text-gray-600 mt-2">
+              The journey begins in 2009, focusing on authentic recipes & quality.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      {/* Growth Phase */}
+      <div className="md:flex md:items-center md:space-x-8 md:flex-row-reverse">
+        <div className="md:w-1/2 md:order-2">
+          <p className="text-gray-600 leading-relaxed">
+            <strong>2012-2015:</strong> We scaled operations, introducing modern production techniques while preserving traditional flavors and recipes that made us loved by our customers.
+          </p>
+        </div>
+        <div className="md:w-1/2 md:order-1 flex justify-center md:justify-start">
+          <div className="bg-yellow-100 rounded-xl p-6 shadow-sm w-full md:w-80">
+            <h4 className="font-semibold text-green-800">Growth</h4>
+            <p className="text-sm text-gray-600 mt-2">
+              Expansion of production capacity and maintaining quality standards.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      {/* Present Day */}
+      <div className="md:flex md:items-center md:space-x-8">
+        <div className="md:w-1/2 md:order-1">
+          <p className="text-gray-600 leading-relaxed">
+            <strong>Today:</strong> Aash Enterprises is a trusted name in the Indian snack industry. Our dedication, innovation, and commitment to quality ensures every bite brings joy and authenticity.
+          </p>
+        </div>
+        <div className="md:w-1/2 md:order-2 flex justify-center md:justify-end">
+          <div className="bg-lime-100 rounded-xl p-6 shadow-sm w-full md:w-80">
+            <h4 className="font-semibold text-green-800">Trusted Brand</h4>
+            <p className="text-sm text-gray-600 mt-2">
+              Loved by families across India for taste, hygiene, and reliability.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {/* Feature Highlights */}
+    <div className="mt-16 grid grid-cols-1 sm:grid-cols-3 gap-6">
+      <div className="bg-white rounded-2xl p-6 shadow-sm">
+        <h4 className="font-semibold text-green-800">
+          Rooted in Tradition
+        </h4>
+        <p className="text-sm text-gray-600 mt-2">
+          Recipes and flavors inspired by Indian households since 2009.
+        </p>
+      </div>
+
+      <div className="bg-white rounded-2xl p-6 shadow-sm">
+        <h4 className="font-semibold text-green-800">
+          Crafted with Care
+        </h4>
+        <p className="text-sm text-gray-600 mt-2">
+          Every batch prepared with attention to quality & hygiene.
+        </p>
+      </div>
+
+      <div className="bg-white rounded-2xl p-6 shadow-sm">
+        <h4 className="font-semibold text-green-800">
+          Made for Families
+        </h4>
+        <p className="text-sm text-gray-600 mt-2">
+          Snacks perfect for every age and every occasion.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
 
 
       {/* ===== MISSION & VISION ===== */}
