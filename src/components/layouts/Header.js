@@ -29,7 +29,7 @@ export default function Header() {
             <Link href="/" className="hover:text-green-600">Home</Link>
             <Link href="/shop" className="hover:text-green-600">Shop</Link>
             <Link href="/product" className="hover:text-green-600">Products</Link>
-            <Link href="/product" className="hover:text-green-600">Gallery</Link>
+            <Link href="/gallery" className="hover:text-green-600">Gallery</Link>
             <Link href="/contact" className="hover:text-green-600">Contact</Link>
           </nav>
 
@@ -69,7 +69,7 @@ export default function Header() {
             <Link href="/" onClick={() => setOpen(false)}>Home</Link>
             <Link href="/shop" onClick={() => setOpen(false)}>Shop</Link>
             <Link href="/product" onClick={() => setOpen(false)}>Products</Link>
-            <Link href="/product" onClick={() => setOpen(false)}>Gallery</Link>
+            <Link href="/gallery" onClick={() => setOpen(false)}>Gallery</Link>
             <Link href="/contact" onClick={() => setOpen(false)}>Contact</Link>
           </nav>
         </div>
