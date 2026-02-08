@@ -7,7 +7,7 @@ export default function Banner() {
     <section className="relative w-full h-[50vh] sm:h-[60vh] md:h-[70vh] ">
       {/* Background Image */}
       <Image
-        src="/banner/b2.webp"   // your image in public/banner folder
+        src="/banner/b3.webp"   // your image in public/banner folder
         alt="Healthy Farsan Snacks"
         fill
         priority
