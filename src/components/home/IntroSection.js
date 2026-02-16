@@ -6,12 +6,12 @@ export default function IntroSection() {
       <div className="max-w-4xl mx-auto px-4 md:text-center">
 
         {/* Heading */}
-        <h1 className="text-4xl md:text-5xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-green-600 to-yellow-500">
+        <h1 className="text-4xl md:text-5xl font-extrabold text-gray-800">
           Aash Enterprises
         </h1>
 
         {/* Sub Heading */}
-        <p className="mt-4 text-lg md:text-xl font-semibold text-green-800">
+        <p className="mt-4 text-lg md:text-xl font-semibold text-gray-800">
           Authentic Farsan & Traditional Indian Snacks
         </p>
 

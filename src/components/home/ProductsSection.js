@@ -59,7 +59,7 @@ export default function ProductsSection() {
 
           {/* Heading */}
           <div className="md:text-center mb-12">
-            <h2 className="text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-yellow-500 to-green-500">
+            <h2 className="text-3xl font-bold text-gray-800">
               Explore Our Snacks
             </h2>
             <p className="mt-2 text-gray-600">
@@ -76,7 +76,7 @@ export default function ProductsSection() {
                   setSelectedProduct(cat.name);
                   setOpen(true);
                 }}
-                className="cursor-pointer rounded-2xl overflow-hidden bg-gradient-to-b from-yellow-50 to-green-50 shadow-md hover:shadow-xl transition"
+                className="cursor-pointer rounded-2xl overflow-hidden bg-white shadow-md hover:shadow-xl transition"
               >
                 {/* Image */}
                 <div className="relative w-full h-56">
@@ -112,12 +112,12 @@ export default function ProductsSection() {
             {/* Close */}
             <button
               onClick={() => setOpen(false)}
-              className="absolute top-3 right-3 text-gray-500 hover:text-red-500"
+              className="absolute top-3 right-3 text-gray-500 hover:text-gray-700"
             >
               <X />
             </button>
 
-            <h3 className="text-2xl font-bold text-green-800 text-center mb-4">
+            <h3 className="text-2xl font-bold text-gray-800 text-center mb-4">
               Quick Order
             </h3>
 
@@ -155,7 +155,7 @@ export default function ProductsSection() {
               {/* Submit */}
               <button
                 type="submit"
-                className="w-full bg-green-700 text-white py-3 rounded-lg font-semibold hover:bg-green-800 transition"
+                className="w-full bg-red-600 text-white py-3 rounded-lg font-semibold hover:bg-red-700 transition"
               >
                 Submit Order
               </button>

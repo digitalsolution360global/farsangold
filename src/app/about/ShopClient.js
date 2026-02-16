@@ -6,7 +6,7 @@ export default function ShopClient() {
   return (
     <>
       {/* ===== SHOP BANNER ===== */}
-      <section className="relative bg-gradient-to-r from-green-900 via-green-800 to-lime-700 pt-40 pb-48 md:pt-52 md:pb-56 overflow-hidden">
+      <section className="relative bg-red-800 pt-40 pb-48 md:pt-52 md:pb-56 overflow-hidden">
 
         {/* Dark Overlay */}
         <div className="absolute inset-0 bg-black/30" />
@@ -49,7 +49,7 @@ export default function ShopClient() {
 
           {/* Text */}
           <div>
-            <h2 className="text-3xl font-bold bg-gradient-to-r from-green-700 to-lime-500 bg-clip-text text-transparent">
+            <h2 className="text-3xl font-bold text-gray-800">
               Farsan That Feels Like Home
             </h2>
 
@@ -70,29 +70,29 @@ export default function ShopClient() {
 
           {/* Highlight Cards */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-            <div className="rounded-2xl bg-gradient-to-br from-green-100 to-lime-100 p-6">
-              <h3 className="font-semibold text-green-800">Premium Quality</h3>
+            <div className="rounded-2xl bg-white p-6">
+              <h3 className="font-semibold text-gray-800">Premium Quality</h3>
               <p className="text-sm text-gray-600 mt-2">
                 Only the best ingredients, sourced carefully for great taste.
               </p>
             </div>
 
-            <div className="rounded-2xl bg-gradient-to-br from-yellow-100 to-lime-100 p-6">
+            <div className="rounded-2xl bg-white p-6">
               <h3 className="font-semibold text-green-800">Traditional Taste</h3>
               <p className="text-sm text-gray-600 mt-2">
                 Authentic farsan flavors passed down through generations.
               </p>
             </div>
 
-            <div className="rounded-2xl bg-gradient-to-br from-lime-100 to-green-100 p-6">
-              <h3 className="font-semibold text-green-800">Fast Delivery</h3>
+            <div className="rounded-2xl bg-white p-6">
+              <h3 className="font-semibold text-gray-800">Fast Delivery</h3>
               <p className="text-sm text-gray-600 mt-2">
                 Carefully packed & delivered fresh to your doorstep.
               </p>
             </div>
 
-            <div className="rounded-2xl bg-gradient-to-br from-green-100 to-yellow-100 p-6">
-              <h3 className="font-semibold text-green-800">Trusted Brand</h3>
+            <div className="rounded-2xl bg-white p-6">
+              <h3 className="font-semibold text-gray-800">Trusted Brand</h3>
               <p className="text-sm text-gray-600 mt-2">
                 Thousands of happy customers trust Farsan Gold.
               </p>
@@ -104,7 +104,7 @@ export default function ShopClient() {
 
       {/* ===== OUR STORY ===== */}
      {/* ===== OUR STORY ===== */}
-<section className="bg-gray-50 py-20 px-6">
+<section className="bg-white py-20 px-6">
   <div className="max-w-6xl mx-auto">
 
     <h2 className="text-3xl md:text-4xl font-bold text-gray-800 text-center">
@@ -121,8 +121,8 @@ export default function ShopClient() {
           </p>
         </div>
         <div className="md:w-1/2 md:order-2 flex justify-center md:justify-end">
-          <div className="bg-green-100 rounded-xl p-6 shadow-sm w-full md:w-80">
-            <h4 className="font-semibold text-green-800">Founded</h4>
+          <div className="bg-white rounded-xl p-6 shadow-sm w-full md:w-80">
+            <h4 className="font-semibold text-gray-800">Founded</h4>
             <p className="text-sm text-gray-600 mt-2">
               The journey begins in 2009, focusing on authentic recipes & quality.
             </p>
@@ -138,7 +138,7 @@ export default function ShopClient() {
           </p>
         </div>
         <div className="md:w-1/2 md:order-1 flex justify-center md:justify-start">
-          <div className="bg-yellow-100 rounded-xl p-6 shadow-sm w-full md:w-80">
+          <div className="bg-white rounded-xl p-6 shadow-sm w-full md:w-80">
             <h4 className="font-semibold text-green-800">Growth</h4>
             <p className="text-sm text-gray-600 mt-2">
               Expansion of production capacity and maintaining quality standards.
@@ -155,8 +155,8 @@ export default function ShopClient() {
           </p>
         </div>
         <div className="md:w-1/2 md:order-2 flex justify-center md:justify-end">
-          <div className="bg-lime-100 rounded-xl p-6 shadow-sm w-full md:w-80">
-            <h4 className="font-semibold text-green-800">Trusted Brand</h4>
+          <div className="bg-white rounded-xl p-6 shadow-sm w-full md:w-80">
+            <h4 className="font-semibold text-gray-800">Trusted Brand</h4>
             <p className="text-sm text-gray-600 mt-2">
               Loved by families across India for taste, hygiene, and reliability.
             </p>
@@ -167,8 +167,8 @@ export default function ShopClient() {
 
     {/* Feature Highlights */}
     <div className="mt-16 grid grid-cols-1 sm:grid-cols-3 gap-6">
-      <div className="bg-white rounded-2xl p-6 shadow-sm">
-        <h4 className="font-semibold text-green-800">
+      <div className="bg-white rounded-2xl p-6 shadow-sm border border-red-100">
+        <h4 className="font-semibold text-gray-800">
           Rooted in Tradition
         </h4>
         <p className="text-sm text-gray-600 mt-2">
@@ -176,8 +176,8 @@ export default function ShopClient() {
         </p>
       </div>
 
-      <div className="bg-white rounded-2xl p-6 shadow-sm">
-        <h4 className="font-semibold text-green-800">
+      <div className="bg-white rounded-2xl p-6 shadow-sm border border-red-100">
+        <h4 className="font-semibold text-gray-800">
           Crafted with Care
         </h4>
         <p className="text-sm text-gray-600 mt-2">
@@ -185,8 +185,8 @@ export default function ShopClient() {
         </p>
       </div>
 
-      <div className="bg-white rounded-2xl p-6 shadow-sm">
-        <h4 className="font-semibold text-green-800">
+      <div className="bg-white rounded-2xl p-6 shadow-sm border border-red-100">
+        <h4 className="font-semibold text-gray-800">
           Made for Families
         </h4>
         <p className="text-sm text-gray-600 mt-2">
@@ -219,9 +219,9 @@ export default function ShopClient() {
 
       {/* Mission */}
       <div className="relative overflow-hidden rounded-3xl border border-gray-100 p-10 shadow-sm hover:shadow-lg transition">
-        <div className="absolute top-0 right-0 w-32 h-32 bg-green-100 rounded-full blur-3xl" />
+        <div className="absolute top-0 right-0 w-32 h-32 bg-white rounded-full blur-3xl" />
 
-        <h3 className="text-2xl font-bold text-green-800 mb-4">
+        <h3 className="text-2xl font-bold text-gray-800 mb-4">
           Our Mission
         </h3>
 
@@ -241,7 +241,7 @@ export default function ShopClient() {
 
       {/* Vision */}
       <div className="relative overflow-hidden rounded-3xl border border-gray-100 p-10 shadow-sm hover:shadow-lg transition">
-        <div className="absolute bottom-0 left-0 w-32 h-32 bg-yellow-100 rounded-full blur-3xl" />
+        <div className="absolute bottom-0 left-0 w-32 h-32 bg-white rounded-full blur-3xl" />
 
         <h3 className="text-2xl font-bold text-green-800 mb-4">
           Our Vision

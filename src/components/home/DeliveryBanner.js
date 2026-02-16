@@ -7,7 +7,7 @@ export default function DeliveryBanner() {
   return (
     <section className="py-10 px-4 bg-white">
       <div className="max-w-7xl mx-auto">
-        <div className="relative overflow-hidden rounded-3xl bg-green-600 px-6 py-24 md:px-12 flex flex-col md:flex-row items-center">
+        <div className="relative overflow-hidden rounded-3xl bg-red-600 px-6 py-24 md:px-12 flex flex-col md:flex-row items-center">
 
           {/* DARK SHADE OVERLAY */}
           <div className="absolute inset-0 bg-black/10 pointer-events-none" />
@@ -35,7 +35,7 @@ export default function DeliveryBanner() {
           <div className="md:ml-56 flex-1 pl-10 md:text-center md:text-left z-10">
             <h2 className="text-2xl md:text-4xl font-bold text-white leading-snug">
               We Deliver on Next Day{" "}
-              <span className="text-yellow-300">
+              <span className="text-green-300">
                 10:00 AM to 08:00 PM
               </span>
             </h2>
@@ -45,7 +45,7 @@ export default function DeliveryBanner() {
               <span className="font-semibold">100</span>
             </p>
 
-            <button className="mt-6 inline-flex items-center gap-2 rounded-full bg-orange-500 px-7 py-3 text-white text-sm font-medium hover:bg-orange-600 transition">
+            <button className="mt-6 inline-flex items-center gap-2 rounded-full bg-red-600 px-7 py-3 text-white text-sm font-medium hover:bg-red-700 transition">
               Shop Now →
             </button>
           </div>

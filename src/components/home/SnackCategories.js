@@ -20,7 +20,7 @@ export default function SnackCategories() {
     <>
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-12">
-          <h2 className="text-3xl sm:text-4xl font-bold text-green-800 mb-12 md:text-center">
+          <h2 className="text-3xl sm:text-4xl font-bold text-gray-800 mb-12 md:text-center">
             Explore Our Snacks
           </h2>
 
@@ -32,12 +32,12 @@ export default function SnackCategories() {
                   setSelectedSnack(cat.name);
                   setOpen(true);
                 }}
-                className="cursor-pointer flex flex-col items-center bg-yellow-50 rounded-xl p-4 shadow-lg hover:shadow-2xl transition w-full max-w-[200px]"
+                className="cursor-pointer flex flex-col items-center bg-white rounded-xl p-4 shadow-lg hover:shadow-2xl transition w-full max-w-[200px]"
               >
-                <div className="w-24 h-24 sm:w-28 sm:h-28 md:w-36 md:h-36 mb-4 rounded-full bg-yellow-200 relative overflow-hidden">
+                <div className="w-24 h-24 sm:w-28 sm:h-28 md:w-36 md:h-36 mb-4 rounded-full bg-white relative overflow-hidden">
                   <Image src={cat.image} alt={cat.name} fill className="object-cover" />
                 </div>
-                <h3 className="text-sm sm:text-base font-semibold text-green-800 text-center">
+                <h3 className="text-sm sm:text-base font-semibold text-gray-800 text-center">
                   {cat.name}
                 </h3>
                 <p className="text-xs text-gray-500 text-center">
@@ -57,12 +57,12 @@ export default function SnackCategories() {
             {/* Close */}
             <button
               onClick={() => setOpen(false)}
-              className="absolute top-3 right-3 text-gray-500 hover:text-red-500"
+              className="absolute top-3 right-3 text-gray-500 hover:text-gray-700"
             >
               <X />
             </button>
 
-            <h3 className="text-2xl font-bold text-green-800 mb-4 text-center">
+            <h3 className="text-2xl font-bold text-gray-800 mb-4 text-center">
               Quick Order
             </h3>
 
@@ -100,7 +100,7 @@ export default function SnackCategories() {
               {/* Button */}
               <button
                 type="submit"
-                className="w-full bg-green-700 text-white py-3 rounded-lg font-semibold hover:bg-green-800 transition"
+                className="w-full bg-red-600 text-white py-3 rounded-lg font-semibold hover:bg-red-700 transition"
               >
                 Submit Order
               </button>

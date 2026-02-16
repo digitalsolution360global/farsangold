@@ -9,7 +9,7 @@ const reasons = [
     desc: "Every snack is freshly prepared daily with strict hygiene and quality standards.",
   },
   {
-    icon: <ShieldCheck className="w-10 h-10 text-yellow-600" />,
+    icon: <ShieldCheck className="w-10 h-10 text-green-600" />,
     title: "Premium Quality Ingredients",
     desc: "We use carefully selected raw materials and authentic spices for superior taste.",
   },
@@ -19,7 +19,7 @@ const reasons = [
     desc: "Traditional recipes that deliver the comforting, homemade taste you love.",
   },
   {
-    icon: <Truck className="w-10 h-10 text-yellow-600" />,
+    icon: <Truck className="w-10 h-10 text-green-600" />,
     title: "Fast & Safe Delivery",
     desc: "Quick, secure packaging and delivery to keep freshness perfectly intact.",
   },
@@ -45,7 +45,7 @@ export default function WhyChooseUs() {
           {reasons.map((item, index) => (
             <div
               key={index}
-              className="bg-white rounded-2xl p-8 text-center border border-gray-100 shadow-sm hover:shadow-lg transition transform hover:-translate-y-1"
+              className="bg-white rounded-2xl p-8 text-center border border-red-200 shadow-sm hover:shadow-lg transition transform hover:-translate-y-1"
             >
               <div className="flex justify-center mb-4">
                 {item.icon}

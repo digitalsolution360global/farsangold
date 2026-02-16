@@ -6,7 +6,7 @@ export default function ContactClient() {
   return (
     <>
       {/* ===== CONTACT BANNER ===== */}
-      <section className="relative bg-gradient-to-r from-green-900 via-green-800 to-lime-700 pt-40 pb-48 md:pt-52 md:pb-56 overflow-hidden">
+      <section className="relative bg-red-800 pt-40 pb-48 md:pt-52 md:pb-56 overflow-hidden">
 
         {/* Dark Overlay */}
         <div className="absolute inset-0 bg-black/30" />
@@ -45,7 +45,7 @@ export default function ContactClient() {
       {/* ===== CONTACT HEADER ===== */}
       <section className="bg-white py-20 px-6">
         <div className="max-w-6xl mx-auto md:text-center">
-          <h1 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-green-700 to-lime-500 bg-clip-text text-transparent">
+          <h1 className="text-3xl md:text-4xl font-bold text-gray-800">
             Get in Touch
           </h1>
           <p className="mt-4 text-gray-600 max-w-2xl mx-auto">
@@ -55,11 +55,11 @@ export default function ContactClient() {
       </section>
 
       {/* ===== ADDRESS + FORM ===== */}
-      <section className="bg-gray-50 py-20 px-6">
+      <section className="bg-white py-20 px-6">
         <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12">
 
           {/* ===== ADDRESS ===== */}
-          <div className="bg-white rounded-2xl p-8 shadow-sm">
+          <div className="bg-white rounded-2xl p-8 shadow-sm border border-red-100">
             <h2 className="text-2xl  font-semibold text-green-800 mb-6">
               Our Office
             </h2>
@@ -101,7 +101,7 @@ export default function ContactClient() {
               </div>
             </div>
 
-            <div className="mt-8 bg-green-50 rounded-xl p-5">
+            <div className="mt-8 bg-white rounded-xl p-5">
               <p className="text-green-800 font-medium text-sm">
                 Business Hours
               </p>
@@ -112,7 +112,7 @@ export default function ContactClient() {
           </div>
 
           {/* ===== CONTACT FORM ===== */}
-          <div className="bg-white rounded-2xl p-8 shadow-sm">
+          <div className="bg-white rounded-2xl p-8 shadow-sm border border-red-100">
             <h2 className="text-2xl font-semibold text-green-800 mb-6">
               Send a Message
             </h2>
@@ -144,7 +144,7 @@ export default function ContactClient() {
 
               <button
                 type="submit"
-                className="w-full bg-green-700 hover:bg-green-800 text-white py-3 rounded-lg font-semibold transition"
+                className="w-full bg-red-600 hover:bg-red-700 text-white py-3 rounded-lg font-semibold transition"
               >
                 Send Message
               </button>

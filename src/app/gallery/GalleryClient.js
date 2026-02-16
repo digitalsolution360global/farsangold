@@ -7,12 +7,12 @@ import { X, Leaf, Star, Sparkles } from "lucide-react";
 export default function GalleryClient() {
   // Gallery images with names and bg colors
   const images = [
-    { src: "/products/bhakarwadi.jpeg", name: "Bhakarwadi", bg: "bg-green-50" },
-    { src: "/products/chips.jpeg", name: "Chips", bg: "bg-yellow-50" },
-    { src: "/products/diet-chakli.jpeg", name: "Diet Chakli", bg: "bg-lime-50" },
-    { src: "/products/kachori.jpeg", name: "Kachori", bg: "bg-orange-50" },
-    { src: "/products/soyabhel.jpeg", name: "Soyabhel", bg: "bg-pink-50" },
-    { src: "/products/wafers.jpeg", name: "Wafers", bg: "bg-purple-50" },
+    { src: "/products/bhakarwadi.jpeg", name: "Bhakarwadi", bg: "bg-white" },
+    { src: "/products/chips.jpeg", name: "Chips", bg: "bg-white" },
+    { src: "/products/diet-chakli.jpeg", name: "Diet Chakli", bg: "bg-white" },
+    { src: "/products/kachori.jpeg", name: "Kachori", bg: "bg-white" },
+    { src: "/products/soyabhel.jpeg", name: "Soyabhel", bg: "bg-white" },
+    { src: "/products/wafers.jpeg", name: "Wafers", bg: "bg-white" },
   ];
 
   const [selectedImage, setSelectedImage] = useState(null);
@@ -20,7 +20,7 @@ export default function GalleryClient() {
   return (
     <>
       {/* ===== GALLERY BANNER ===== */}
-      <section className="relative bg-gradient-to-r from-green-900 via-green-800 to-lime-700 pt-40 pb-48 md:pt-52 md:pb-56 overflow-hidden">
+      <section className="relative bg-red-800 pt-40 pb-48 md:pt-52 md:pb-56 overflow-hidden">
         <div className="absolute inset-0 bg-black/30" />
         <Leaf className="absolute top-32 left-14 text-white/15 w-20 h-20 animate-pulse" />
         <Star className="absolute top-48 right-20 text-white/15 w-16 h-16" />
@@ -45,7 +45,7 @@ export default function GalleryClient() {
       {/* ===== INTRO BELOW BANNER ===== */}
       <section className="bg-white py-16 px-6">
         <div className="max-w-5xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-green-700 to-lime-500 bg-clip-text text-transparent">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-800">
             Authentic Farsan for Every Moment
           </h2>
           <p className="mt-6 text-gray-600 leading-relaxed text-sm md:text-base">
@@ -73,7 +73,7 @@ export default function GalleryClient() {
                 className="w-full h-52 object-cover rounded-t-2xl"
               />
               <div className="p-4 text-center">
-                <h3 className="font-semibold text-green-800 text-lg">{item.name}</h3>
+                <h3 className="font-semibold text-gray-800 text-lg">{item.name}</h3>
               </div>
             </div>
           ))}

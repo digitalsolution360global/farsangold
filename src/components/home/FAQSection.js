@@ -52,7 +52,7 @@ export default function FAQSection() {
             >
               <button
                 onClick={() => setOpen(open === i ? null : i)}
-                className="w-full flex items-center justify-between px-6 py-5 text-left font-medium text-gray-900 hover:bg-green-50 transition"
+                className="w-full flex items-center justify-between px-6 py-5 text-left font-medium text-gray-900 hover:bg-gray-100 transition"
               >
                 {item.q}
                 <ChevronDown

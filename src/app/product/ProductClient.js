@@ -6,7 +6,7 @@ import ProductsSection from "@/components/home/ProductsSection";
 export default function ProductClient() {
   return (
     <>
-      <section className="relative bg-gradient-to-r from-green-900 via-green-800 to-lime-700 pt-40 pb-48 md:pt-52 md:pb-56 overflow-hidden">
+      <section className="relative bg-red-800 pt-40 pb-48 md:pt-52 md:pb-56 overflow-hidden">
 
         {/* Dark Overlay */}
         <div className="absolute inset-0 bg-black/30" />
@@ -46,7 +46,7 @@ export default function ProductClient() {
       {/* ===== INTRO SECTION ===== */}
       <section className="bg-white py-24 px-6">
         <div className="max-w-5xl mx-auto md:text-center">
-          <h2 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-green-700 to-lime-500 bg-clip-text text-transparent">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-800">
             Authentic Farsan for Every Moment
           </h2>
 
@@ -59,22 +59,22 @@ export default function ProductClient() {
           </p>
 
           <div className="mt-12 grid grid-cols-1 sm:grid-cols-3 gap-6">
-            <div className="rounded-2xl bg-green-50 p-6 shadow-sm hover:shadow-md transition">
-              <h3 className="font-semibold text-green-800">Fresh & Hygienic</h3>
+            <div className="rounded-2xl bg-white p-6 shadow-sm hover:shadow-md transition">
+              <h3 className="font-semibold text-gray-800">Fresh & Hygienic</h3>
               <p className="text-sm text-gray-600 mt-2">
                 Prepared daily with strict quality control.
               </p>
             </div>
 
-            <div className="rounded-2xl bg-lime-50 p-6 shadow-sm hover:shadow-md transition">
+            <div className="rounded-2xl bg-white p-6 shadow-sm hover:shadow-md transition">
               <h3 className="font-semibold text-green-800">Traditional Taste</h3>
               <p className="text-sm text-gray-600 mt-2">
                 Authentic recipes loved across generations.
               </p>
             </div>
 
-            <div className="rounded-2xl bg-yellow-50 p-6 shadow-sm hover:shadow-md transition">
-              <h3 className="font-semibold text-green-800">Perfect for Gifting</h3>
+            <div className="rounded-2xl bg-white p-6 shadow-sm hover:shadow-md transition">
+              <h3 className="font-semibold text-gray-800">Perfect for Gifting</h3>
               <p className="text-sm text-gray-600 mt-2">
                 A delicious choice for every occasion.
               </p>
