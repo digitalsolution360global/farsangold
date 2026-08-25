@@ -31,13 +31,13 @@ export default function Footer() {
             {/* Brand */}
             <div className="max-w-sm">
               <Link href="/" className="flex items-center gap-3 mb-4">
-                <Image
+                {/* <Image
                   src="/farsan-gold.png"
                   alt="Farsan Gold Healthy Snacks"
                   width={64}
                   height={64}
                   className="object-contain shrink-0 mix-blend-darken"
-                />
+                /> */}
                 <div>
                   <h2 className="text-2xl font-bold text-white">
                     FARSAN<span className="text-green-400">G</span>
