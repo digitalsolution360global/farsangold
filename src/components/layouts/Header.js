@@ -16,7 +16,7 @@ export default function Header() {
           {/* ================= LOGO (LEFT) ================= */}
           <Link href="/" className="flex items-center gap-2 shrink-0">
             <Image
-              src="/farsan-gold.png"
+              src="/logo.png"
               alt="Farsan Gold Healthy Snacks"
               width={50}
               height={50}
