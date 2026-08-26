@@ -6,15 +6,63 @@ import { X, Leaf, Star, Sparkles } from "lucide-react";
 
 export default function GalleryClient() {
   // Gallery images with names and bg colors
-  const images = [
-    { src: "/products/bhakarwadi.jpeg", name: "Bhakarwadi", bg: "bg-white" },
-    { src: "/products/chips.jpeg", name: "Chips", bg: "bg-white" },
-    { src: "/products/diet-chakli.jpeg", name: "Diet Chakli", bg: "bg-white" },
-    { src: "/products/kachori.jpeg", name: "Kachori", bg: "bg-white" },
-    { src: "/products/soyabhel.jpeg", name: "Soyabhel", bg: "bg-white" },
-    { src: "/products/wafers.jpeg", name: "Wafers", bg: "bg-white" },
-  ];
-
+const images = [
+  {
+    src: "/products/palak-mixture.jpeg",
+    name: "PALAK MIXTURE",
+    bg: "bg-white",
+  },
+  {
+    src: "/products/oats-chips.jpeg",
+    name: "OATS CHIPS",
+    bg: "bg-white",
+  },
+  {
+    src: "/products/quinoa-chips.jpeg",
+    name: "QUINOA CHIPS",
+    bg: "bg-white",
+  },
+  {
+    src: "/products/makhana-chips.jpeg",
+    name: "MAKHANA CHIPS",
+    bg: "bg-white",
+  },
+  {
+    src: "/products/beetroot-chips.jpeg",
+    name: "BEETROOT CHIPS",
+    bg: "bg-white",
+  },
+  {
+    src: "/products/mix-vegetable-chips.jpeg",
+    name: "MIX VEGITABLE CHIPS",
+    bg: "bg-white",
+  },
+  {
+    src: "/products/beetroot-mixture.jpeg",
+    name: "BEETROOT MIXTURE",
+    bg: "bg-white",
+  },
+  {
+    src: "/products/multigrain-chips.jpeg",
+    name: "MULTIGRAIN CHIPS",
+    bg: "bg-white",
+  },
+  {
+    src: "/products/ragi-chips.jpeg",
+    name: "RAGI CHIPS",
+    bg: "bg-white",
+  },
+  {
+    src: "/products/soya-sticks.jpeg",
+    name: "SOYA STICKS",
+    bg: "bg-white",
+  },
+  {
+    src: "/products/soya-chips.jpeg",
+    name: "SOYA CHIPS",
+    bg: "bg-white",
+  },
+];
   const [selectedImage, setSelectedImage] = useState(null);
 
   return (

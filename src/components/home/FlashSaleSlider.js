@@ -6,11 +6,36 @@ import { useRef } from "react";
 import "swiper/css";
 
 const categories = [
-  { name: "Bhakawari", image: "/products/bhakarwadi.jpeg", products: 50 },
-  { name: "Kachori", image: "/products/kachori.jpeg", products: 75 },
-  { name: "Wafers", image: "/products/wafers.jpeg", products: 60 },
-  { name: "Chips", image: "/products/chips.jpeg", products: 80 },
-  { name: "Farsan Mix", image: "/products/soyabhel.jpeg", products: 90 },
+  {
+    name: "MULTIGRAIN CHIPS",
+    image: "/products/multigrain-chips.jpeg",
+    products: 1,
+  },
+  {
+    name: "RAGI CHIPS",
+    image: "/products/ragi-chips.jpeg",
+    products: 1,
+  },
+  {
+    name: "QUINOA CHIPS",
+    image: "/products/quinoa-chips.jpeg",
+    products: 1,
+  },
+  {
+    name: "MAKHANA CHIPS",
+    image: "/products/makhana-chips.jpeg",
+    products: 1,
+  },
+  {
+    name: "BEETROOT CHIPS",
+    image: "/products/beetroot-chips.jpeg",
+    products: 1,
+  },
+  {
+    name: "MIX VEGITABLE CHIPS",
+    image: "/products/mix-vegetable-chips.jpeg",
+    products: 1,
+  },
 ];
 
 export default function FlashSaleSection() {

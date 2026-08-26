@@ -268,39 +268,37 @@ export default function ProductsSection() {
             </p>
           </div>
 
-          {/* =====================================================
+                    {/* =====================================================
               PRODUCT CARDS
           ====================================================== */}
 
-          <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3">
+          <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
             {products.map((product, index) => (
               <div
                 key={`${product.name}-${index}`}
                 onClick={() => handleProductClick(product)}
-                className="group cursor-pointer overflow-hidden rounded-2xl bg-white shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
+                className="group mx-auto w-full max-w-[280px] cursor-pointer overflow-hidden rounded-2xl bg-white shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
               >
-               {/* Image */}
-              <div className="relative h-64 w-full overflow-hidden bg-gray-50">
-                <Image
-                  src={product.image}
-                  alt={product.name}
-                  fill
-                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                  className="object-cover transition-transform duration-500 group-hover:scale-105"
-                />
-              </div>
+                {/* Image */}
+                <div className="relative h-[360px] w-full overflow-hidden bg-gray-50">
+                  <Image
+                    src={product.image}
+                    alt={product.name}
+                    fill
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                    className="object-cover transition-transform duration-500 group-hover:scale-105"
+                  />
+                </div>
 
                 {/* Content */}
-                <div className="p-6 text-center">
-                  <h3 className="text-xl font-bold uppercase text-gray-900">
+                <div className="flex min-h-[120px] flex-col items-center justify-center p-5 text-center">
+                  {/* Product Title */}
+                  <h3 className="text-lg font-bold uppercase leading-snug text-gray-900">
                     {product.name}
                   </h3>
 
-                  <p className="mt-2 line-clamp-2 text-sm leading-6 text-gray-600">
-                    {product.desc}
-                  </p>
-
-                  <div className="mt-5 inline-flex items-center gap-2 text-sm font-bold text-red-600">
+                  {/* View Details */}
+                  <div className="mt-4 inline-flex items-center gap-2 text-sm font-bold text-red-600 transition-colors group-hover:text-red-700">
                     View Details
                     <ArrowRight
                       size={16}
@@ -309,6 +307,7 @@ export default function ProductsSection() {
                   </div>
                 </div>
               </div>
+
             ))}
           </div>
         </div>
@@ -318,107 +317,115 @@ export default function ProductsSection() {
           PRODUCT DETAILS POPUP
       ====================================================== */}
 
-      {detailsOpen && selectedProduct && (
-        <div
-          className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 px-4 py-6 backdrop-blur-sm"
-          onClick={() => setDetailsOpen(false)}
-        >
-          <div
-            onClick={(e) => e.stopPropagation()}
-            className="relative max-h-[90vh] w-full max-w-2xl overflow-y-auto rounded-3xl bg-white shadow-2xl"
-          >
-            {/* Close */}
-            <button
-              type="button"
-              onClick={() => setDetailsOpen(false)}
-              className="absolute right-4 top-4 z-20 flex h-10 w-10 items-center justify-center rounded-full bg-white text-gray-700 shadow-md transition hover:bg-red-600 hover:text-white"
-            >
-              <X size={20} />
-            </button>
+     {detailsOpen && selectedProduct && (
+  <div
+    className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 px-4 py-6 backdrop-blur-sm"
+    onClick={() => setDetailsOpen(false)}
+  >
+    <div
+      onClick={(e) => e.stopPropagation()}
+      className="relative max-h-[90vh] w-full max-w-5xl overflow-y-auto rounded-3xl bg-white shadow-2xl"
+    >
+      {/* Close Button */}
+      <button
+        type="button"
+        onClick={() => setDetailsOpen(false)}
+        className="absolute right-4 top-4 z-30 flex h-10 w-10 items-center justify-center rounded-full bg-white text-gray-700 shadow-md transition hover:bg-red-600 hover:text-white"
+      >
+        <X size={20} />
+      </button>
 
-            {/* Product Image */}
-            <div className="relative flex h-64 items-center justify-center bg-gray-50 sm:h-80">
-              <Image
-                src={selectedProduct.image}
-                alt={selectedProduct.name}
-                fill
-                sizes="(max-width: 768px) 100vw, 672px"
-                className="object-contain p-8"
-              />
-            </div>
+      {/* Main Content */}
+      <div className="grid grid-cols-1 md:grid-cols-2">
 
-            {/* Content */}
-            <div className="p-6 sm:p-8">
-
-              <span className="text-xs font-bold uppercase tracking-[0.2em] text-red-600">
-                Product Details
-              </span>
-
-              <h2 className="mt-2 text-2xl font-bold uppercase text-gray-900 sm:text-3xl">
-                {selectedProduct.name}
-              </h2>
-
-              {/* Price + Pack */}
-              <div className="mt-5 flex flex-wrap gap-3">
-
-                <div className="rounded-xl bg-gray-100 px-5 py-3">
-                  <p className="text-xs uppercase tracking-wide text-gray-500">
-                    Pack Size
-                  </p>
-
-                  <p className="mt-1 font-bold text-gray-900">
-                    {selectedProduct.packSize}
-                  </p>
-                </div>
-
-                <div className="rounded-xl bg-red-50 px-5 py-3">
-                  <p className="text-xs uppercase tracking-wide text-red-500">
-                    Price
-                  </p>
-
-                  <p className="mt-1 font-bold text-red-600">
-                    ₹{selectedProduct.price}
-                  </p>
-                </div>
-
-              </div>
-
-              {/* Description */}
-              <div className="mt-6">
-                <h4 className="mb-2 text-sm font-bold uppercase tracking-wide text-gray-900">
-                  Description
-                </h4>
-
-                <p className="text-sm leading-7 text-gray-600">
-                  {selectedProduct.desc}
-                </p>
-              </div>
-
-              {/* Ingredients */}
-              <div className="mt-6 rounded-2xl bg-gray-50 p-5">
-                <h4 className="mb-3 text-sm font-bold uppercase tracking-wide text-gray-900">
-                  Ingredients
-                </h4>
-
-                <p className="text-sm leading-7 text-gray-600">
-                  {selectedProduct.ingredients}
-                </p>
-              </div>
-
-              {/* Shop Now */}
-              <button
-                type="button"
-                onClick={handleShopNow}
-                className="mt-7 flex w-full items-center justify-center gap-3 rounded-xl bg-red-600 px-6 py-4 text-sm font-bold uppercase tracking-wide text-white transition-all duration-300 hover:bg-red-700"
-              >
-                <ShoppingBag size={18} />
-                Shop Now
-              </button>
-
-            </div>
-          </div>
+        {/* ================= LEFT : PRODUCT IMAGE ================= */}
+        <div className="relative flex min-h-[400px] items-center justify-center bg-gray-50 md:min-h-[600px]">
+          <Image
+            src={selectedProduct.image}
+            alt={selectedProduct.name}
+            fill
+            sizes="(max-width: 768px) 100vw, 50vw"
+            className="object-contain p-10 md:p-14"
+          />
         </div>
-      )}
+
+        {/* ================= RIGHT : PRODUCT DETAILS ================= */}
+        <div className="flex flex-col p-6 sm:p-8 md:p-10">
+
+          {/* Label */}
+          <span className="text-xs font-bold uppercase tracking-[0.2em] text-red-600">
+            Product Details
+          </span>
+
+          {/* Title */}
+          <h2 className="mt-3 text-2xl font-bold uppercase leading-tight text-gray-900 sm:text-3xl">
+            {selectedProduct.name}
+          </h2>
+
+          {/* Description */}
+          <div className="mt-5">
+            <h4 className="mb-2 text-sm font-bold uppercase tracking-wide text-gray-900">
+              Description
+            </h4>
+
+            <p className="text-sm leading-7 text-gray-600">
+              {selectedProduct.desc}
+            </p>
+          </div>
+
+          {/* Price + Pack Size */}
+          <div className="mt-6 grid grid-cols-2 gap-3">
+
+            {/* Pack Size */}
+            <div className="rounded-xl bg-gray-100 px-4 py-4">
+              <p className="text-xs uppercase tracking-wide text-gray-500">
+                Pack Size
+              </p>
+
+              <p className="mt-1 font-bold text-gray-900">
+                {selectedProduct.packSize}
+              </p>
+            </div>
+
+            {/* Price */}
+            <div className="rounded-xl bg-red-50 px-4 py-4">
+              <p className="text-xs uppercase tracking-wide text-red-500">
+                Price
+              </p>
+
+              <p className="mt-1 font-bold text-red-600">
+                ₹{selectedProduct.price}
+              </p>
+            </div>
+
+          </div>
+
+          {/* Ingredients */}
+          <div className="mt-6 rounded-2xl bg-gray-50 p-5">
+            <h4 className="mb-3 text-sm font-bold uppercase tracking-wide text-gray-900">
+              Ingredients
+            </h4>
+
+            <p className="text-sm leading-7 text-gray-600">
+              {selectedProduct.ingredients}
+            </p>
+          </div>
+
+          {/* Shop Now */}
+          <button
+            type="button"
+            onClick={handleShopNow}
+            className="mt-7 flex w-full items-center justify-center gap-3 rounded-xl bg-red-600 px-6 py-4 text-sm font-bold uppercase tracking-wide text-white transition-all duration-300 hover:bg-red-700"
+          >
+            <ShoppingBag size={18} />
+            Shop Now
+          </button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+)}
 
       {/* =====================================================
           QUICK ORDER POPUP

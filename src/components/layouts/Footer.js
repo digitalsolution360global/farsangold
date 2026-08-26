@@ -87,26 +87,40 @@ export default function Footer() {
                   </li>
                 </ul>
 
-                {/* Social */}
-                <div className="flex gap-4 mt-6">
-                  <a
-                    href="#"
-                    className="p-2 rounded-full bg-red-800 hover:bg-red-700 transition flex items-center justify-center"
-                  >
-                    <FaFacebookF size={18} />
-                  </a>
-                  <a
-                    href="#"
-                    className="p-2 rounded-full bg-red-800 hover:bg-red-700 transition flex items-center justify-center"
-                  >
-                    <FaInstagram size={18} />
-                  </a>
-                  <a
-                    href="#"
-                    className="p-2 rounded-full bg-red-800 hover:bg-red-700 transition flex items-center justify-center"
-                  >
-                    <FaTwitter size={18} />
-                  </a>
+               {/* Social */}
+              <div className="flex gap-4 mt-6">
+
+                {/* Facebook */}
+                <a
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="p-2 rounded-full bg-[#1877F2] hover:bg-[#0d65d9] text-white transition-all duration-300 flex items-center justify-center"
+                >
+                  <FaFacebookF size={18} />
+                </a>
+
+                {/* Instagram */}
+                <a
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="p-2 rounded-full bg-gradient-to-tr from-[#F58529] via-[#DD2A7B] to-[#8134AF] hover:opacity-90 text-white transition-all duration-300 flex items-center justify-center"
+                >
+                  <FaInstagram size={18} />
+                </a>
+
+                {/* Twitter / X */}
+                <a
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="p-2 rounded-full bg-[#1DA1F2] hover:bg-[#0d8bd9] text-white transition-all duration-300 flex items-center justify-center"
+                >
+                  <FaTwitter size={18} />
+                </a>
+
+
                 </div>
               </div>
 
@@ -115,11 +129,12 @@ export default function Footer() {
         </div>
       </footer>
 
-      {/* ================= DESKTOP FLOATING WHATSAPP ================= */}
+   {/* ================= DESKTOP FLOATING WHATSAPP ================= */}
       <a
         href="https://wa.me/918595052849"
         target="_blank"
-        className="hidden md:flex fixed bottom-6 right-6 z-50 bg-red-600 hover:bg-red-700 text-white w-14 h-14 rounded-full items-center justify-center shadow-lg transition"
+        rel="noopener noreferrer"
+        className="hidden md:flex fixed bottom-6 right-6 z-50 bg-[#25D366] hover:bg-[#20BA5A] text-white w-14 h-14 rounded-full items-center justify-center shadow-lg transition-all duration-300"
       >
         <FaWhatsapp size={28} />
       </a>
